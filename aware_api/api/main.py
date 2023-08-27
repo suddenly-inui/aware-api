@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime
 
 from aware_api import db
 from aware_api.api import errors
