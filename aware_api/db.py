@@ -74,9 +74,3 @@ def create_mock(engine, table):
 if __name__ == "__main__":
     engine = connect_database("aware")
     create_mock(engine, ["emotion1", "emotion2", "emotion3"])
-    all_tables(engine)
-
-
-# query = "select * from emotion1"
-# df = pd.read_sql(query, con=engine)
-# print(df)
