@@ -16,6 +16,7 @@ def execute_sql(engine, sql):
         conn.commit()
     return result
 
+
 def insert_data(engine, table: str, data: dict):
     keys = list(data.keys())
     values = list(data.values())
@@ -40,6 +41,7 @@ def all_tables(engine):
         for j in i:
             tables.append(j)
     return tables
+
 
 def create_mock(engine, table):
     reset_table(engine, table)
@@ -67,6 +69,7 @@ def create_mock(engine, table):
     for d in datas:
         for t in table:
             insert_data(engine, t, d)
+
 
 if __name__ == "__main__":
     engine = connect_database("aware")
