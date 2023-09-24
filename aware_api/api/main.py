@@ -30,6 +30,7 @@ def read_root():
 
 @app.get("/get_data")
 def get_data(device_id: str = None, timestamp: str = None, emotion: str = None, _from: str = None, _to: str = None):
+    # インジェクションできるね
     queries = []
     target_tables = tables
 
